@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #main{
+        height: 500px;
+        width: 600px;
+        background-color:grey;
+        border: 2px solid blue;
+        border-radius: 20px;
+
+    }
+    #first{
+        text-align: center;
+        padding: 100px;
+        font-size: 60px;
+    }
+    #decrease{
+        margin-left: 70px;
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 2px 2px 1px 1px black;
+    }
+    #reset{
+        margin-left: 30px;
+        font-size:20px ;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 2px 2px 1px 1px black;
+        }
+        #increase{
+        margin-top: 60px;
+        margin-left: 30px;
+        font-size:20px ;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 2px 2px 1px 1px black;
+        }
+        #main-first{
+            text-align: center;
+            font-size: 50px;
+            margin-top: -80px;
+            color: greenyellow;
+           
+        }
+    
+</style>
+<body>
+    <div id="main">
+        <h1 id="first">Counter</h1>
+        <div id="main-first"></div>
+        <button id="decrease">DECREASE</button>
+        <button id="reset">RESET</button>
+        <button id="increase" onclick="increasevalue()">INCREASE</button>
+    </div>
+</body>
+<script>
+    var count=0;
+    increase.addEventListener('click',function(){
+        document.getElementById('increase').style.background="pink";
+        document.getElementById('main-first').innerHTML=count;
+        setInterval(function(){
+        },1000)
+        count++;
+    })
+    decrease.addEventListener('click',function(){
+        document.getElementById('decrease').style.background="pink";
+        document.getElementById('main-first').innerHTML=count;
+        setInterval(function(){
+        },1000)
+        count--;
+    })
+    reset.addEventListener('click',function(){
+        document.getElementById('reset').style.background="pink";
+        document.getElementById('main-first').innerHTML=0;
+    })
+
+</script>
+</html>
